@@ -1,53 +1,65 @@
 # Tesla Stock Analysis
 
-A notebook-based data-science project for exploring Tesla historical market behavior through **technical indicators, machine-learning forecasting, and sentiment signals**.
+> **A reproducible research notebook for market signals, forecasting experiments, and sentiment analysis.**
 
-> This is an educational research project, not financial advice. Historical performance and model predictions do not guarantee future results.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter" />
+  <img src="https://img.shields.io/badge/XGBoost-0B2B3C?logo=xgboost&logoColor=F4B942" alt="XGBoost" />
+  <img src="https://img.shields.io/badge/LSTM-0B8F8C?logo=tensorflow&logoColor=white" alt="LSTM" />
+  <img src="https://img.shields.io/badge/educational%20research-MIT-F4B942" alt="Educational research" />
+</p>
 
-## Project overview
+This repository explores historical Tesla-market behavior through **technical indicators, machine-learning forecasting, and sentiment signals**. It is an educational research project intended to make the workflow easy to inspect and reproduce in Jupyter or Google Colab.
 
-The project combines exploratory financial analysis with forecasting experiments and a sentiment-analysis workflow. It is designed to make the research process reproducible and easy to inspect in Jupyter or Google Colab.
+> **Important:** This is not financial advice. Historical performance and model predictions do not guarantee future results.
 
-## What is included
+## What this project demonstrates
 
-- Historical Tesla price analysis for 2015–2020
-- Technical and social features for exploratory modeling
-- XGBoost and LSTM forecasting experiments
-- Sentiment-analysis workflow and visualization
-- A small plotting utility for recreating the sentiment figure
+| Research layer | Included work |
+| --- | --- |
+| **Market data** | Historical Tesla price analysis for 2015–2020 |
+| **Feature engineering** | Technical indicators and social/sentiment features |
+| **Forecasting** | XGBoost and LSTM experiments |
+| **Interpretation** | Exploratory visualizations and sentiment analysis |
+| **Reproducibility** | Notebook workflow plus a small plotting utility |
 
-## Repository structure
+## Start here
 
-| File | Description |
-|---|---|
-| `Hossein_Dehghan_Tesla_Stock_Prediction_XGBoost_LSTM.ipynb` | Forecasting experiments using XGBoost and LSTM |
-| `tesla_stock_analysis_Hossein_Dehghan_.ipynb` | Exploratory stock analysis and visualizations |
-| `colab_sentiment_code.ipynb` | Sentiment-analysis workflow |
-| `recreate_sentiment_plot.py` | Utility for reproducing the sentiment plot |
+| Goal | File |
+| --- | --- |
+| Review the main forecasting experiment | [`Hossein_Dehghan_Tesla_Stock_Prediction_XGBoost_LSTM.ipynb`](Hossein_Dehghan_Tesla_Stock_Prediction_XGBoost_LSTM.ipynb) |
+| Explore historical behavior | [`tesla_stock_analysis_Hossein_Dehghan_.ipynb`](tesla_stock_analysis_Hossein_Dehghan_.ipynb) |
+| Inspect the sentiment workflow | [`colab_sentiment_code.ipynb`](colab_sentiment_code.ipynb) |
+| Recreate the sentiment plot | [`recreate_sentiment_plot.py`](recreate_sentiment_plot.py) |
+| See the broader engineering portfolio | [Hossein Dehghan on GitHub](https://github.com/hossiendehghan989) |
 
-## Tech stack
+## Run locally
 
-**Python · Jupyter Notebook · pandas · NumPy · Matplotlib · XGBoost · LSTM · sentiment analysis**
+```bash
+git clone https://github.com/hossiendehghan989/Tesla-Stock-Analysis.git
+cd Tesla-Stock-Analysis
+python -m venv .venv
+source .venv/bin/activate
+pip install jupyter pandas numpy matplotlib xgboost
+jupyter notebook
+```
 
-## Getting started
+Open a notebook and run the cells in order. The notebooks may require small dependency or data-source adjustments because they are research artifacts rather than a packaged production application.
 
-1. Clone the repository:
+## How to read the results
 
-   ```bash
-   git clone https://github.com/hossiendehghan989/Tesla-Stock-Analysis.git
-   cd Tesla-Stock-Analysis
-   ```
+The experiments depend on the selected historical period, feature engineering choices, data availability, preprocessing, and model configuration. Forecasting output should be interpreted as an experiment in modeling—not as a trading signal or investment recommendation. A stronger next step would be a leakage-audited, walk-forward benchmark with explicit baselines and transaction-cost assumptions.
 
-2. Open the notebooks in Jupyter or Google Colab.
-3. Install the dependencies required by the notebook you want to run.
-4. Run the cells in order and review the assumptions, visualizations, and model outputs.
+## Next research directions
 
-## Notes on interpretation
-
-The notebooks are intended for learning and experimentation. Results depend on the selected historical period, feature engineering choices, data availability, and model configuration. They should not be interpreted as investment recommendations.
+- Add a chronological walk-forward evaluation protocol
+- Compare against naive and seasonal baselines
+- Separate exploratory features from production-eligible features
+- Document missing-data handling and train/test boundaries
+- Add error analysis by market regime
+- Package the workflow with pinned dependencies and reproducible artifacts
 
 ## Author
 
-**Hossein Dehghan** — Industrial Engineering · AI & Data Science
-
-[View the full portfolio profile](https://github.com/hossiendehghan989)
+Built by [Hossein Dehghan](https://github.com/hossiendehghan989), an Industrial Engineering graduate focused on **applied AI, data science, energy intelligence, and operational decision support**.
