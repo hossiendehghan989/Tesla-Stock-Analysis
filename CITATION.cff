@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Tesla Stock Analysis"
+message: "If you use this educational research artifact, please cite it."
+type: software
+authors:
+  - family-names: Dehghan
+    given-names: Hossein
+version: 0.1.0
+date-released: 2026-10-01
+repository-code: https://github.com/hossiendehghan989/Tesla-Stock-Analysis
+license: MIT
+abstract: "Educational research on Tesla market signals, time-series forecasting, XGBoost/LSTM experiments, and sentiment analysis."
